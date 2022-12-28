@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 300px;
+    margin: auto;
+}
+
+p {
+    font-size: 2rem;
+    margin: 15px;
+}
+
+.cell {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+#reset{
+    padding: 6px 25px;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #2e5dff;
+}
